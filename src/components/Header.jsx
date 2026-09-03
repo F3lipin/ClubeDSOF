@@ -15,9 +15,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-conteudo">
-        <a className="marca" href="#inicio" onClick={fecharMenu} aria-label="ClubeDS - Início">
           <img src={logoClubeDS} alt="ClubeDS" className="marca-logo" />
-          <span className="marca-texto">
             <strong>Clube DS</strong>
             <small>Clube de Programação</small>
           </span>
