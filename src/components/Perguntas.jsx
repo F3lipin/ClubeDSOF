@@ -1,3 +1,5 @@
+import "./Perguntas.css";
+
 function Perguntas() {
   const perguntas = [
     {
