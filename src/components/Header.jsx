@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoClubeDS from "../assets/logo-clubeds.svg";
 
 function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -14,9 +15,12 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-conteudo">
-        <a className="marca" href="#inicio" onClick={fecharMenu}>
-          <span>Clube DS</span>
-          <small>Clube de Programação</small>
+        <a className="marca" href="#inicio" onClick={fecharMenu} aria-label="ClubeDS - Início">
+          <img src={logoClubeDS} alt="ClubeDS" className="marca-logo" />
+          <span className="marca-texto">
+            <strong>Clube DS</strong>
+            <small>Clube de Programação</small>
+          </span>
         </a>
 
         <button
@@ -32,6 +36,7 @@ function Header() {
         <nav className={menuAberto ? "nav aberta" : "nav"} aria-label="Navegação principal">
           <a href="#inicio" onClick={fecharMenu}>Início</a>
           <a href="#funcionalidades" onClick={fecharMenu}>Funcionalidades</a>
+          <a href="#perguntas" onClick={fecharMenu}>Perguntas</a>
         </nav>
       </div>
     </header>
