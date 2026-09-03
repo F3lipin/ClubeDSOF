@@ -1,0 +1,41 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #060022;
+  background: #060022;
+  font-synthesis: none;
+}
+
+#h2 {
+  font-size: 30px;
+  line-height: 1.05;
+  color: #21002b;
+  margin: 13px 0;
+}
+
+#summary {
+  font-size: 30px;
+  line-height: 1.05;
+  color: #FFF8EE;
+  margin: 13px 0;
+}
+
+#titulo-secao {
+  font-size: 30px;
+  line-height: 1.05;
+  color: #030303;
+  margin: 13px 0;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: inherit; }
+button, input, textarea { font: inherit; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #550d55;
+  outline-offset: 3px;
+}
